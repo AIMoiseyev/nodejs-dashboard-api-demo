@@ -1,3 +1,5 @@
+import { PrismaService } from './database/prisma.service';
+
 export const TYPES = {
 	Application: Symbol.for('Application'),
 	ILogger: Symbol.for('ILogger'),
@@ -5,4 +7,5 @@ export const TYPES = {
 	ExceptionFilter: Symbol.for('ExceptionFilter'),
 	UsersService: Symbol.for('UsersService'),
 	ConfigService: Symbol.for('ConfigService'),
+	PrismaService: Symbol.for('PrismaService'),
 };
