@@ -51,4 +51,8 @@ export class App {
 		this.logger.log(`Server listen on port ${this.port}`);
 		console.log(`Server listen on port ${this.port}`);
 	}
+
+	public close(): void {
+		this.server.close();
+	}
 }
